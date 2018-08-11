@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "moji_nested_hash"
+require "moji_nested_hash/hash/keys"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
