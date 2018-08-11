@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Hash
   def nested_key?(key)
     nested_keys.include? key
