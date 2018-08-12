@@ -1,0 +1,31 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'Gemfile'
+Documentation:
+  Enabled: false
+Metrics/ClassLength:
+  Max: 100
+  Exclude:
+    - "db/**/*.rb"
+    - "lib/**/*.rb"
+    - "spec/**/*.rb"
+Metrics/BlockLength:
+  Max: 25
+  Exclude:
+    - "db/**/*.rb"
+    - "lib/**/*.rb"
+    - "spec/**/*.rb"
+Metrics/AbcSize:
+  Max: 15 # default: 15
+  Exclude:
+    - "db/**/*.rb"
+    - "lib/**/*.rb"
+    - "spec/**/*.rb"
+Metrics/LineLength:
+  Exclude:
+    - "moji_nested_hash.gemspec"
