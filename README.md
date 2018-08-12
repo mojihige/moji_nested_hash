@@ -22,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can extend the hash and use the following two methods.
+
+- nested_keys
+- nested_key?
+
+### nested_keys
+Return all nested keys
+
+```ruby
+man = {taro: {age: '15', sex: 'male'}}
+man.nested_keys
+=> [:taro, :age, :sex]
+``` 
+### nested_key?
+It checks whether it is included in all nested keys
+```ruby
+man = {taro: {age: '15', sex: 'male'}}
+man.nested_key? :sex
+=> true
+``` 
 
 ## Development
 
